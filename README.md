@@ -4,5 +4,5 @@ Integration tests in Go with mocks
 ### Generate mocks
 `make gen`
 
-## Run tests
+### Run tests
 `make test`
