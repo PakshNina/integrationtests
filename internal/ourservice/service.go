@@ -34,7 +34,7 @@ func NewService(repo birthdaysRepo, pb phonebook) OurService {
 	}
 }
 
-func (s ourService) GetBirthdayByPhone(phone string) (time.Time, error) {
+func (s *ourService) GetBirthdayByPhone(phone string) (time.Time, error) {
 	userID, err := s.pb.GetUserIDByPhone(phone)
 	if err != nil {
 		return time.Time{}, errNoPhone
